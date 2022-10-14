@@ -1,0 +1,30 @@
+doctype html
+html(lang="en" style="background: #f4d8cc;")
+  head
+    include ./partials/head
+
+  body
+
+    include ./partials/loader
+
+    .bg-container
+      .bg-component
+
+    include ./partials/navigation
+    include ./partials/hamb
+
+    .notice
+      img(data-src="/notice.gif", alt="hello")
+      h1 FOR GOOD EXPERINCE, OPEN THIS SITE IN BIG SCREEN.
+
+    include ./partials/home
+    include ./partials/about
+    include ./partials/case
+
+    include ./partials/noscript
+
+    //- .cursor
+    //-   .pointer
+
+    script(src="app/components/dat.gui.min.js")
+    script(src="app/components/script.js")
