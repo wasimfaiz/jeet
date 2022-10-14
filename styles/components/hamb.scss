@@ -1,0 +1,78 @@
+.hamb__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 49;
+    // background: rgba(21,28,19,1);
+    background: #071004;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+    // transition: all .7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+
+    &.active{
+
+
+    }
+
+    canvas{
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+}
+
+.hamb__inner__menu{
+  width: 100%;
+  height: fit-content;
+}
+
+.hamb__menu__inner{
+    // position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hamb__item{
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    padding: 1rem 0 1rem 10vw;
+  }
+
+  .hamb__inner__btn{
+    font-size: 20rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    width:fit-content;
+    line-height: 1;
+    overflow: hidden;
+    transition: color .5s ease;
+
+    .word{
+      transform: translateY(100%);
+      pointer-events: none;
+    }
+
+    &--active{
+        color: $color-pine-tree;
+    }
+
+    &:hover{
+      color: $color-pine-tree;
+    }
+}

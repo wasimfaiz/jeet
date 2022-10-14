@@ -1,0 +1,109 @@
+mixin award(link, date, title, description, project)
+  li.about__section__list__item
+    span.about__section__list__dash(data-animation="line" data-animation-threshold="1" data-animation-target=".about__section__list__item")
+
+    a.about__section__list__link(
+      data-animation="y"
+      data-animation-threshold="1"
+      data-animation-target=".about__section__list__item"
+      href=link target="_blank"
+      rel="noreferrer noopener"
+    )
+      span.about__section__list__column=title
+      span.about__section__list__column=date
+      span.about__section__list__column=project
+      span.about__section__list__column=description
+
+mixin press(link, title, description)
+  li.about__section__list__item
+    span.about__section__list__dash(data-animation="line" data-animation-threshold="1" data-animation-target=".about__section__list__item")
+
+    a.about__section__list__link.about__section__list__link--article(
+      data-animation="y"
+      data-animation-threshold="1"
+      data-animation-target=".about__section__list__item"
+      href=link target="_blank"
+      rel="noreferrer noopener"
+    )
+      span.about__section__list__column=title
+      span.about__section__list__column=description
+
+section.about
+  .about__content
+    .about__wrapper
+      header.about__header
+        h1.about__header__title
+          span.about__header__title__text
+            | #[span.splitter CREATIVE+]
+
+          span.about__header__title__text
+            | #[span.splitter INTERACTIVE]
+
+          span.about__header__title__text
+            | #[span.splitter DEVELOPER]
+
+      .about__gallery
+        .content-canvas
+        figure.about__gallery__wrapper
+          img(data-src="/grid.jpg" data-src-webp="/grid.webp" , alt="profile picture")
+
+
+      .about__sections
+        .about__section
+          h2.about__section__title About
+
+          .about__section__content
+            p.about__section__description(data-animation="paragraph")
+              | Hi👋,I'm Jeet and I'm a Frontend Developer from India.
+              | I create creative sites, web apps(not now😜), clones of other sites and sometimes make non-sense projects just for fun😁.
+              | JavaScript is my cup of coffee☕, HTML and CSS is 😉. Sometimes I jump from React to Vue😛.
+
+            p.about__section__description(data-animation="paragraph")
+              | I’m currently studing more and more about JavaScript, ThreeJS, Animations and 3D Stuffs.
+              | I like to Create a Websites and Webapps that are creative and interactive.
+
+        .about__section
+                h2.about__section__title MY FEATURE
+
+                .about__section__content
+                  p.about__section__description(data-animation="paragraph")
+                    | I'VE BEEN WORKING SINCE 2020. DURING THIS TIME,
+                    | I REALIZED THAT I LIKE TO COMBINE FUNCTIONAL SOLUTIONS
+                    | WITH ESTHETICS. THIS IS HOW I CREATE A PRODUCT THAT WILL BE USED WITH LOVE
+
+                  p.about__section__description(data-animation="paragraph")
+                    | I TRY TO USE ALL POSSIBLE TOOLS IN MY WORK TO ACHIEVE
+                    | MAXIMUM RESULTS. I LOVE WORKING WITH 3D, PHOTOGRAPHY, VIDEO, TYPOGRAPHY, COLORS AND UNUSUAL GRAPHIC SOLUTIONS.
+
+        .about__section
+                h2.about__section__title MY SKILLS
+
+                .about__section__content
+                  .about__section__content__wrapper
+                    .about__section__content__list
+                      h2.about__section__list__title DEVELOPMENT
+                      p.about__section__list__item(data-animation="paragraph") HTML5
+                      p.about__section__list__item(data-animation="paragraph") CSS3
+                      p.about__section__list__item(data-animation="paragraph") SCSS
+                      p.about__section__list__item(data-animation="paragraph") JAVASCRIPT
+                      p.about__section__list__item(data-animation="paragraph") REACT
+                      p.about__section__list__item(data-animation="paragraph") VUE JS
+                      p.about__section__list__item(data-animation="paragraph") NUXT JS
+                      p.about__section__list__item(data-animation="paragraph") NEXT JS
+                      p.about__section__list__item(data-animation="paragraph") PYTHON
+                      p.about__section__list__item(data-animation="paragraph") C
+                    .about__section__content__list
+                      h2.about__section__list__title DESIGN AND TOOLS
+                      p.about__section__list__item(data-animation="paragraph") FIGMA
+                      p.about__section__list__item(data-animation="paragraph") ADOBE XD
+                      p.about__section__list__item(data-animation="paragraph") ADOBE PHOTOSHOP
+                      p.about__section__list__item(data-animation="paragraph") ADOBE ILLUSTRATION
+                      p.about__section__list__item(data-animation="paragraph") INKSCAPE
+                      p.about__section__list__item(data-animation="paragraph") BLENDER
+                      p.about__section__list__item(data-animation="paragraph") NPM
+
+        .about__section.footer__section
+            .about__section__content
+
+  canvas.fluid-container#fluid-container
+  p.notice HOLD AND MOVE MOUSE

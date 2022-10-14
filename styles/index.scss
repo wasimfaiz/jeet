@@ -1,0 +1,64 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/responsive";
+@import "./utils/mixins";
+@import "./utils/vendors";
+
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/reset";
+
+@import "./shared/links";
+@import "./shared/sections";
+
+@import "./components/canvas";
+@import "./components/functionals";
+@import "./components/navigation";
+@import "./components/loader";
+@import "./components/cursor";
+@import "./components/hamb";
+
+@import "./pages/home/home";
+
+@import "./pages/about/about";
+@import "./pages/about/header";
+@import "./pages/about/gallery";
+@import "./pages/about/sections";
+
+@import "./pages/case/case";
+@import "./pages/case/header";
+@import "./pages/case/media";
+
+.notice{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+
+    @media only screen and (max-width:1200px) {
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+
+      & h1{
+        font-size: 1.6rem;
+      }
+
+    }
+
+    & h1{
+        font-size: 5rem;
+    }
+
+}

@@ -1,0 +1,46 @@
+.about__gallery {
+  color: $color-pine-tree;
+  font-size: 0;
+  opacity: 0;
+  margin-bottom: 20rem;
+  position: relative;
+  transition: opacity 0.4s ease;
+  max-height: 100vh;
+  padding: 10vh 6vw;
+
+  .about--active & {
+    opacity: 1;
+  }
+}
+
+.content-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  & canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba($color: #000000, $alpha: 0.7);
+  }
+}
+
+.about__gallery__wrapper{
+  position: relative;
+  overflow: hidden;
+
+  & canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+}
